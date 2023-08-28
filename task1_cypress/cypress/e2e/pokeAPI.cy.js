@@ -1,3 +1,8 @@
+// Using Cypress as well, write an API test with the following information:
+// 	- Use https://pokeapi.co
+// 	- Search for Magikarp
+// 	- Check its name, order and move names are the correct ones
+
 describe('PokeAPI Test', () => {
   it('Search for Magikarp and validate its information', () => {
     cy.request('GET', 'https://pokeapi.co/api/v2/pokemon/magikarp')

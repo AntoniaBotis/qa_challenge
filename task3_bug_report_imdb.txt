@@ -1,0 +1,23 @@
+Unable to Rate Movies with 10 Stars on IMDb's Top Box Office Page
+
+Steps to Reproduce:
+
+Open the IMDb website (www.imdb.com).
+Log in to your account.
+Navigate to the "Movies" section.
+Click on "Top Box Office".
+Select a movie.
+Attempt to rate the movie with 10 stars.
+
+Expected Result:
+The "Rate" button should become enabled when selecting a rating of 10 stars, allowing the user to submit the rating for the selected movie.
+
+Actual Result:
+The "Rate" button remains disabled after selecting a rating of 10 stars, preventing the user from submitting the rating for the selected movie.
+
+Browser and Version:
+Google Chrome, Version 93.0.4577.63 (Official Build) (x86_64)
+
+Operating System:
+MacOS Monterey 12.6.7 
+

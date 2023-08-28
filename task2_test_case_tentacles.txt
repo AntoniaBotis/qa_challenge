@@ -1,0 +1,52 @@
+Feature: Validating Number of Tentacles Input
+
+  Scenario: User enters a Valid number of tentacles
+    Given the user is on the form page
+    When the user enters a number between 10 and 100 in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see a "Success" message
+
+  Scenario: User enters a Number below the valid range
+    Given the user is on the form page
+    When the user enters a number less than 10 in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see an "Error" message
+
+  Scenario: User enters a Number above the valid range
+    Given the user is on the form page
+    When the user enters a number greater than 100 in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see an "Error" message
+
+  Scenario: User enters a Non-numeric value
+    Given the user is on the form page
+    When the user enters a non-numeric value in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see an "Error" message
+
+  Scenario: User enters a Empty Input value
+    Given the user is on the form page
+    When the user enters a Empty Input in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see an "Error" message
+
+
+  Scenario: User enters a Decimal Value value
+    Given the user is on the form page
+    When the user enters a Decimal Value in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see an "Error" message
+
+  Scenario: User enters a lower boundery value
+    Given the user is on the form page
+    When the user enters 10 in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see an "Success" message
+
+  Scenario: User enters a upper boundery value
+    Given the user is on the form page
+    When the user enters 100 in the "Number of tentacles" field
+    And the user clicks the "Send" button
+    Then the user should see an "Success" message
+
+

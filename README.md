@@ -1,4 +1,4 @@
-# qa_challenge
+# INDEX
 [TASK 1 IMDB Scenarios - imdb.cy.js](task1_cypress/cypress/e2e/imdb.cy.js)
 
 [TASK 1 Poke API Scenario - pokeAPI.cy.js](task1_cypress/cypress/e2e/pokeAPI.cy.js)

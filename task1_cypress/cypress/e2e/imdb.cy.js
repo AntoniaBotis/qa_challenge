@@ -1,3 +1,4 @@
+
 describe('IMDB Test', () => {
 
     beforeEach(() => {
@@ -11,6 +12,11 @@ describe('IMDB Test', () => {
         });
     });
 
+    //- Go to IMDb.com
+    //search for Nicolas Cage and access his profile; 
+    //then unfold the Upcoming tab in the Credits section, 
+    //and click on the first movie with a Completed tag
+    
     it('1st - Nicolas Cage Search', () => {
         cy.get('input[placeholder="Search IMDb"]')
             .type('Nicolas Cage')
@@ -41,6 +47,12 @@ describe('IMDB Test', () => {
 
     });
 
+    //Go to IMDb.com, 
+    //unfold the Menu and navigate to the Top Box Office section; 
+    //then click on the 2nd item on the Top box office list; 
+    //then click on the IMDb Rating button, 
+    //click on the Rate button, and set a 5 stars Rating and 
+    //click on the Rate button in the modal
     it('2nd - Top Box Office 2nd Rating', () => {
         cy.get('label[id="imdbHeader-navDrawerOpen"]')
             .click();
@@ -80,6 +92,10 @@ describe('IMDB Test', () => {
 
     });
 
+    //- Go to IMDb.com
+    //unfold the Menu button, and navigate to the Top 250 TV Shows section; 
+    //then click on Breaking Bad, go to the Photos, 
+    //display only Danny Trejo's photos, and then click on the 2nd photo in the list.
     it('3rd - Breaking Bad Danny Trejo Photos', () => {
         cy.get('label[id="imdbHeader-navDrawerOpen"]')
             .click();
